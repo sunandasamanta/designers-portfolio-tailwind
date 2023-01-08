@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                    },
+                    height: {
+                        700: "43.75rem",
+                        800: "50rem",
+                    },
+                    width: {
+                        thirty: "30%",
+                        sixty: "60%",
+                        seventy: "70%",
+                        eighty: "80%",
+                        85: "85%",
+                        ninety: "90%",
+                    },
+                    backgroundSize: {
+                        auto: "auto",
+                        cover: "cover",
+                        contain: "contain",
+                        50: "50%",
+                        20: "20%",
+                        16: "16%",
+                    },
+                },
+                fontFamily: {
+                    montserrat: ["Montserrat", "sans-serif"],
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-[#000] font-montserrat">
+    <nav class="w-11/12 mx-auto flex text-white relative">
+        <div class="bg-[url(./assets/Logo.svg)] bg-50 bg-no-repeat bg-left w-1/6 h-12 my-4">
+        </div>
+        <div class="absolute right-0 top-0">
+            <ul class="flex uppercase font-semibold text-xs py-8">
+                <li class="px-2 flex">
+                    <span>Home</span>
+                    <img class="w-4" src="./assets/DROP-cropped.svg" alt="dropdown-menu">
+                </li>
+                <li class="px-2">Project</li>
+                <li class="px-2">About</li>
+                <li class="px-2">Contact</li>
+                <li class="px-2 flex">
+                    <span>Other page</span>
+                    <img class="w-4" src="./assets/DROP-cropped.svg" alt="dropdown-menu">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="text-white">
+        <section class="flex">
+            <div class="w-1/2">
+                <img src="./assets/model.png" alt="model">
+            </div>
+            <div class=" w-1/3 mr-auto flex items-center">
+                <article class="">
+                    <h1 class="font-semibold text-red-600 text-4xl py-4">Hello, I'm Arthur.</h1>
+                    <h2 class="font-semibold text-6xl pb-4">Visual Designer</h2>
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat omnis
+                        aspernatur mollitia at. Quis dicta accusantium, quas quisquam aut amet vel, ratione ad, mollitia
+                        accusamus enim modi quasi minima.</p>
+                    <a href="https://github.com/sunandasamanta"><button
+                            class="uppercase py-3 px-12 bg-red-600 hover:bg-red-700 font-semibold text-xl">about
+                            me</button></a>
+                </article>
+            </div>
+        </section>
+        <section class="w-85 py-20 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="p-10 w-thirty mr-auto bg-zinc-900 hover:bg-red-600">
+                    <img class="w-10 py-3" src="./assets/card1.svg" alt="">
+                    <h4 class="font-bold text-md py-3"> UI Design </h4>
+                    <p class="card-para py-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="pr-8 mt-4 font-bold text-xl bg-[url(./assets/white-right-arrow-24.png)] bg-20 bg-no-repeat bg-right">Know More </button>
+                </div>
+                <div class="p-10 w-thirty mr-auto bg-zinc-900 hover:bg-red-600">
+                    <img class="w-10 py-3" src="./assets/card2.svg" alt="">
+                    <h4 class="font-bold text-md py-3"> Product Design </h4>
+                    <p class="card-para py-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="pr-8 mt-4 font-bold text-xl bg-[url(./assets/white-right-arrow-24.png)] bg-20 bg-no-repeat bg-right">Know More </button>
+                </div>
+                <div class="p-10 w-thirty bg-zinc-900 hover:bg-red-600">
+                    <img class="w-10 py-3" src="./assets/card3.svg" alt="">
+                    <h4 class="font-bold text-md py-3"> Branding </h4>
+                    <p class="card-para py-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="pr-8 mt-4 font-bold text-xl bg-[url(./assets/white-right-arrow-24.png)] bg-20 bg-no-repeat bg-right">Know More </button>
+                </div>
+            </div>
+        </section>
+        <section class="w-[85%] mx-auto lg:flex sm:grid">
+            <article class="text-center bg-zinc-900 px-10 mr-16 mt-12 w-max h-max items-center">
+                <h1 class="font-bold text-7xl text-red-600 mx-4 mt-2">12+</h1>
+                <p class="mb-2">Years Experience</p>
+            </article>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4 sm:grid-cols-1">
+                <article class="text-center py-2 bg-zinc-900 px-20">
+                    <h1 class="font-bold text-5xl text-red-600 mx-4 mt-2">60+</h1>
+                    <p>Clients</p>
+                </article>
+                <article class="text-center py-2 bg-zinc-900 px-20">
+                    <h1 class="font-bold text-5xl text-red-600 mx-4 mt-2">08</h1>
+                    <p>Years Experience</p>
+                </article>
+                <article class="text-center py-2 bg-zinc-900 px-20">
+                    <h1 class="font-bold text-5xl text-red-600 mx-4 mt-2">122+</h1>
+                    <p>Completed Projects</p>
+                </article>
+                <article class="text-center py-2 bg-zinc-900 px-20">
+                    <h1 class="font-bold text-5xl text-red-600 mx-4 mt-2">10</h1>
+                    <p>Achievements</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
