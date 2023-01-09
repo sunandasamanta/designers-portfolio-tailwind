@@ -16,6 +16,8 @@
             theme: {
                 screens: {
                     'sm': '320px',
+                    'md': '768px',
+                    'xl': '1280px'
                 },
                 extend: {
                     colors: {
@@ -53,8 +55,13 @@
     <nav class="w-11/12 mx-auto flex text-white relative">
         <div class="bg-[url(./assets/Logo.svg)] bg-50 bg-no-repeat bg-left w-1/6 h-12 my-4">
         </div>
-        <div class="absolute right-0 top-0">
-            <ul class="flex uppercase font-semibold text-xs py-8">
+        <div class="xl:hidden md:hidden sm:inline sm:absolute sm:right-0 sm:top-0">
+            <button class="flex items-center px-3 py-2">
+                <img class="w-6 h-6" src="./assets/mq-nav.svg" alt="mq-nav">
+            </button>
+        </div>
+        <div class="xl:absolute xl:right-0 xl:top-0">
+            <ul class="xl:flex md:flex sm:hidden uppercase font-semibold text-xs py-8">
                 <li class="px-2 flex">
                     <span>Home</span>
                     <img class="w-4" src="./assets/DROP-cropped.svg" alt="dropdown-menu">
@@ -79,8 +86,7 @@
                     <h1 class="font-semibold text-red-600 text-4xl py-4">Hello, I'm Arthur.</h1>
                     <h2 class="font-semibold text-6xl pb-4">Visual Designer</h2>
                     <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat omnis
-                        aspernatur mollitia at. Quis dicta accusantium, quas quisquam aut amet vel, ratione ad, mollitia
-                        accusamus enim modi quasi minima.</p>
+                        aspernatur mollitia at.</p>
                     <a href="https://github.com/sunandasamanta"><button
                             class="uppercase py-3 px-12 bg-red-600 hover:bg-red-700 font-semibold text-xl">about
                             me</button></a>
